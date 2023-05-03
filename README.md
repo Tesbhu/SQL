@@ -23,3 +23,60 @@ Los diagramas como el siguiente:
 
 
 son clave tanto si eres estudiante o un administrador de base de datos con 30 años de experiencia pues asociar una imagén visual  nos permite pensar en distinos caminos a la solución de nuestras consultas 
+
+
+----
+
+## Consultas básicas
+
+SELECT: Se utiliza para recuperar datos de una tabla o vista.
+
+```sql
+Ejemplo: Seleccionar todos los registros de una tabla
+SELECT * FROM tabla;
+INSERT: Se utiliza para insertar nuevos registros en una tabla.
+```
+INSERT: Se utiliza para insertar nuevos registros en una tabla
+
+```sql
+Ejemplo: Insertar un nuevo registro en una tabla
+INSERT INTO tabla (columna1, columna2, ...) VALUES (valor1, valor2, ...);
+```
+
+UPDATE: Se utiliza para actualizar registros existentes en una tabla.
+
+sql
+
+-- Ejemplo: Actualizar un valor en una tabla
+UPDATE tabla SET columna = nuevo_valor WHERE condición;
+DELETE: Se utiliza para eliminar registros de una tabla.
+
+sql
+e
+-- Ejemplo: Eliminar registros que cumplan una condición en una tabla
+DELETE FROM tabla WHERE condición;
+WHERE: Se utiliza para filtrar registros basados en una condición.
+
+sql
+
+-- Ejemplo: Seleccionar registros que cumplan una condición específica
+SELECT * FROM tabla WHERE condición;
+ORDER BY: Se utiliza para ordenar los resultados en función de una o varias columnas.
+
+sql
+
+-- Ejemplo: Ordenar los registros por una columna en orden ascendente
+SELECT * FROM tabla ORDER BY columna ASC;
+GROUP BY: Se utiliza para agrupar registros basados en el valor de una columna.
+
+sql
+
+-- Ejemplo: Agrupar registros y calcular la suma de una columna
+SELECT columna, SUM(otra_columna) FROM tabla GROUP BY columna;
+
+JOIN: Se utiliza para combinar registros de dos o más tablas en función de una condición.
+
+sql
+
+-- Ejemplo: Realizar un join entre dos tablas basado en una condición
+SELECT * FROM tabla1 JOIN tabla2 ON tabla1.columna = tabla2.columna;
